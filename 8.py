@@ -24,7 +24,7 @@ ax.plot(xs_deg, list(map(lambda x: np.cos(x * np.pi / 180), xs_deg)))
 ax.set_ylim(-1, 1)
 
 ax = fig.add_subplot(236)
-ax.plot(xs_deg, list(map(lambda x: np.tan(x * np.pi / 180), xs_deg)))
+ax.plot(np.arange(-90, 91, 1), list(map(lambda x: np.tan(x * np.pi / 180), np.arange(-90, 91, 1))))
 ax.set_xlim(-90, 90)
 ax.set_ylim(-1, 1)
 
